@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex">
+        <form id="caculator" onsubmit="calculate(event)">
+            <div class="flex">
+                <input type="number" id="numero-uno" required>
+                <select id="sign">
+                    <option value="plus">+</option>
+                    <option value="minus">-</option>
+                </select>
+                <input type="number" id="numero-dos" required>
+            </div>
+            <div class="flex">
+                <input type="submit" value="Thực hiện phép tính!">
+            </div>
+        </form>
+    </div>
+    <div class="flex"><h2 id="expression"></h2></div>
+    <div class="flex">
+        <div class="lineContainer"></div>
+    </div>
+    <div id="result">
+        <div class="flex">
+            <div>
+                <div class="flex-inside" id="step-1-wrap">
+                    <p id="step-1-message"></p>
+                </div>
+                <div class="flex-inside" id="step-1-expression">
+                </div>
+            </div>
+        </div>
+        <div class="flex" id="step-2"></div>
+        <div class="flex" id="step-3"></div>
+        <div class="flex" id="step-final"></div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/addNumberLine.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.flex-inside {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.lineContainer {
+    position: relative;
+}
+  
+.line {
+    width: 40px;
+    Height: 8px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.line-negative {
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+}
+
+.line-positive {
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+}
+
+.line-0 {
+    border-top: 2px solid red;
+    border-right: 2px solid black;
+}
+
+.lineRightEnd {
+    border-right: 0;   
+}
+
+.numberContainer {
+    position: absolute;
+    top: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.number {
+    width: 32.3px;
+    float: left;
+    padding: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: yellow;
+}
+
+.active-first {
+    background-color: lightgreen !important;
+}
+
+.numberLeftEnd {
+    width: 15px;
+    Height: 5px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#expression {
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 50px;
+}
+
+#step-1-wrap {
+    align-items: center;
+    justify-content: center;
+}
+
+#step-1-message {
+    margin-right: 10px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
