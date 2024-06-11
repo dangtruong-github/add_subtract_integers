@@ -1,5 +1,7 @@
 # Config total
 There are two config files:
+- ```config.json``` for general config
+- ```train/loader/timestep.py``` for dataset edit
 
 ## General config
 File name ```config.json```, located at the root folder.
@@ -21,7 +23,7 @@ config["normalized_data"]["file_name"]
 ```
 
 ## Train step config
-File name ```timestep.py```, located at the ```train/loader``` folder.
+File name ```train/loader/timestep.py```.
 
 Each ```Dataset config``` has three main values: ```name, time_step, label```.
 
@@ -57,7 +59,9 @@ Label of those time steps: ```t-0``` is ```1/True``` where the rest are ```0/Fal
 # Pipeline: Preprocess data, Train model, and Evaluate model
 ## Quick guide
 At the root folder ```truongchu```, execute this to run everything
-```./run.sh preprocess train eval```
+```
+./run.sh preprocess train eval
+```
 
 ## Preprocess data
 At the root folder ```truongchu```, execute this
