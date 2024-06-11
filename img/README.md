@@ -61,7 +61,9 @@ At the root folder ```truongchu```, execute this to run everything
 
 ## Preprocess data
 At the root folder ```truongchu```, execute this
-```./run.sh preprocess```
+```
+./run.sh preprocess
+```
 
 After running this path, two files of type ```.npy``` and ```.csv``` will appear. Those files would have the names that you specified in the ```config.json``` file above.
 
@@ -73,7 +75,9 @@ For example, the filename in the config file is ```normalized_after_aggregated_e
 
 ## Train model
 At the root folder ```truongchu```, execute this
-```./run.sh train```
+```
+./run.sh train
+```
 
 After running preprocess pipeline, you will run this command to train the model.
 
@@ -87,7 +91,9 @@ For example, the model name is saved as ```model_save/model/first_model.pt```. T
 
 ## Evaluate model
 At the root folder ```truongchu```, execute this
-```./run.sh eval```
+```
+./run.sh eval
+```
 
 After training, all models appearing on the file ```model_file.txt``` in ```train``` folder will be evaluated.
 
